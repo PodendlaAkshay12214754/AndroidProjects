@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:title="setting"
+    android:id="@+id/i1"
+    android:icon="@drawable/img"
+    app:showAsAction="always"
+    />
+    <item
+        android:title="setting6303"
+        android:id="@+id/i11"
+        android:icon="@drawable/img"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="setting8902"
+        android:id="@+id/i1122"
+        android:icon="@drawable/img"
+        app:showAsAction="always"
+        />
+
+</menu>

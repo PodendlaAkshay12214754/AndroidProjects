@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!-- ImageView for displaying the burger image -->
+    <ImageView
+        android:id="@+id/im1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- First TextView for "Cheese" text -->
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cheese"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="25dp" />
+
+    <!-- Second TextView for "Burger" text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Burger"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        android:paddingLeft="28dp" />
+
+    <!-- TextView for "SELECT YOUR BURGER" heading -->
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SELECT YOUR BURGER"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintTop_toBottomOf="@+id/im1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Book Now"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:marqueeRepeatLimit="@integer/material_motion_duration_long_2"
+/>
+    <!-- CheckBoxes for burger selection -->
+    <CheckBox
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aloo Tikki"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+    <CheckBox
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chicken"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/b1" />
+
+    <CheckBox
+        android:id="@+id/b3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paneer Tikki"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/b2" />
+
+    <CheckBox
+        android:id="@+id/b4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mushroom Tikki"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/b3" />
+
+    <!-- TextView for "DELIVERY TYPE" heading -->
+    <TextView
+        android:id="@+id/b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DELIVERY TYPE"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/b4" />
+
+    <!-- RadioGroup for delivery options -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/b5">
+
+        <RadioButton
+            android:id="@+id/b6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Away"
+            android:textSize="15sp"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/b7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Door Delivery"
+            android:textSize="15sp"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <!-- Button for placing the order -->
+    <Button
+        android:id="@+id/b8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Now"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>

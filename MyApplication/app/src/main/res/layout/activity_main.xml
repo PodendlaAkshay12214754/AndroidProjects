@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gravity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/ic_menu_myplaces"
+    android:backgroundTint="#39C1DC"
+    android:baselineAligned="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEF6F1"
+        android:ems="100"
+        android:fadingEdge="vertical"
+        android:inputType="text"
+        android:text="User Name" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6F4F2"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Password" />
+
+    <Button
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="36dip"
+        android:rotationX="2"
+        android:text="Sign in"
+        android:visibility="visible"
+        app:iconTint="@color/white"
+        tools:visibility="visible" />
+
+</LinearLayout>

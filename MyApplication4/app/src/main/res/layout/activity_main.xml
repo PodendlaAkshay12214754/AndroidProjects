@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageButton
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        android:contentDescription="Portfolio Item 1" />
+
+    <ImageButton
+        android:id="@+id/btnPortfolio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        android:contentDescription="Portfolio Item 2" />
+
+    <ImageButton
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        android:contentDescription="Portfolio Item 3" />
+
+    <ImageButton
+        android:id="@+id/btnPortfolio4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img"
+        android:contentDescription="Portfolio Item 4" />
+</LinearLayout>
